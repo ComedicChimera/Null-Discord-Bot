@@ -1,0 +1,21 @@
+{
+  "jobs": [
+    { "name": "mechanic", "salary": 50 },
+    { "name": "volunteer policeman", "salary": 30 },
+    { "name": "cashier", "salary": 25 },
+    { "name": "janitor", "salary": 10 },
+    { "name": "assistant chef", "salary": 60 },
+    { "name": "garbage collector", "salary": 15 },
+    { "name": "construction worker", "salary": 20 },
+    { "name": "extra", "salary": 45 },
+    { "name": "plumber", "salary": 25 },
+    { "name": "camp conselor", "salary": 35 },
+    { "name": "whiny millennial", "salary": 30 },
+    { "name": "tech support agent", "salary": 20 },
+    { "name": "bar maid", "salary": 15 },
+    { "name": "sewage worker", "salary": 12 },
+    { "name": "starbucks barista", "salary": 32 },
+    { "name": "crossing guard", "salary": 35 },
+    { "name": "software developer", "salary": 5 }
+  ]
+}

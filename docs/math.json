@@ -1,0 +1,48 @@
+{
+  "body":
+    "The `math` command is user to evaluate a given mathematical **expression**, not an equation.  It is essentially a built in calculator.",
+  "fields": [
+    {
+      "title": "Syntax",
+      "content": [
+        "The math parser supports the use of grouping symbols including `()` and `||` (absolute value).",
+        "However, it does not allow the use of adjacent parenthesis to signify multiplication.  So the following is invalid. ```(2 + 2)(3 * 4)```",
+        "It allows the calling of mathematical functions like so: ```sin(32)```It follows a pattern of function name and then parenthesis operands.  Multiple operands will be delimited by commas like so: ```log(2, 10)```",
+        "It allows integers, floating point numbers (decimals), and complex numbers (written in the form 2i, 4i, 19i, ect.) to be passed to all functions (those that can allow it) and to be used together."
+      ]
+    },
+    {
+      "title": "Operators",
+      "content": [
+        "The `math` command supports the following mathematical operators.",
+        "``` +\n-\n*\n/\n^\n%```",
+        "The `^` operator designates exponentiation and the `%` operator calculates the remainder.",
+        "All the operators take 2 operands."
+      ]
+    },
+    {
+      "title": "Constants",
+      "content": [
+        "The calculators comes built in a couple common mathematical / computer science constants.",
+        "```\ne\npi\ntau\ntrue\nfalse\ni```"
+      ]
+    },
+    {
+      "title": "Functions",
+      "content": [
+        "The math parser a number of common and useful functions including:",
+        "- **Trigonometric and Hyperbolic functions**",
+        "```\nsin\ncos\ntan\nasin\nacos\natan\nsinh\ncosh\ntanh\nasinh\nacosh\natanh```",
+        "*All of which return results in radians.*",
+        "- **Common Mathematical functions**",
+        "```\nsqrt (calculates complex square roots as well)\nround\nint (floor)```",
+        "- **Logarithmic functions**",
+        "```\nlog (if no base given, assumes 10)\nln```",
+        "- **Angular Conversion functions**",
+        "```\ndeg\nrad```",
+        "- **Complex functions**",
+        "```\nim (get the imaginary part of the number)\nre (get the real part of the number)```"
+      ]
+    }
+  ]
+}

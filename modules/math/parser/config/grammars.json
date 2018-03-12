@@ -1,0 +1,48 @@
+{
+  "expr": [
+    "term n_term"
+  ],
+  "term": [
+    "factor n_factor"
+  ],
+  "n_term": [
+    "+ term n_term",
+    "- term n_term",
+    "&"
+  ],
+  "factor": [
+    "atom n_atom"
+  ],
+  "n_factor": [
+    "* factor n_factor",
+    "/ factor n_factor",
+    "% factor n_factor",
+    "&"
+  ],
+  "atom": [
+    "neg base"
+  ],
+  "neg": [
+    "-",
+    "&"
+  ],
+  "base": [
+    "( expr )",
+    "| expr |",
+    "COMPLEX",
+    "NUMBER",
+    "IDENTIFIER trailer"
+  ],
+  "n_atom": [
+    "^ atom n_atom",
+    "&"
+  ],
+  "trailer": [
+    "( expr n_param )",
+    "&"
+  ],
+  "n_param": [
+    ", expr n_param",
+    "&"
+  ]
+}

@@ -1,0 +1,2 @@
+419644550227951636
+https://discordapp.com/api/oauth2/authorize?client_id=419644550227951636&scope=bot&permissions=1

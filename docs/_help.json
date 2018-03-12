@@ -1,0 +1,86 @@
+{
+  "body": "The prefix for your server is `#PREFIX`.",
+  "fields": [
+    {
+      "title": "Utility",
+      "content": [
+        "- **#PREFIXprefix** Get or set the current prefix. `OPTIONAL[prefix]`",
+        "- **#PREFIXabout** Get basic information about Null and its status.",
+        "- **#PREFIXhelp** Get info on commands or get this message. `OPTIONAL[command_name]`"
+      ]
+    },
+    {
+      "title": "Math and Science",
+      "content": [
+        "- **#PREFIXmath** Evaluate a math expression. `expression`",
+        "- **#PREFIXwolfram** Query *Wolfram | Alpha*. `query`",
+        "- **#PREFIXtex** Generate a LaTeX image from a given string. `tex`",
+        "- **#PREFIXequation** Generate a fancy image of an equation. `equation`",
+        "- **#PREFIXrand** Generate a random number between one or two specified bounds. `bounds`",
+        "- **#PREFIXshuffle** Shuffle a list of items delimited by a comma and space. `list`"
+      ]
+    },
+    {
+      "title": "Music",
+      "content": [
+        "- **#PREFIXplay** Play a song or add it to the queue if a song is playing. `name`",
+        "- **#PREFIXstop** Stop the music and empties the queue.",
+        "- **#PREFIXskip** Skip a song.",
+        "- **#PREFIXpause** Pause the current song.",
+        "- **#PREFIXresume** Resume the current song if a song is paused.",
+        "- **#PREFIXclearqueue** Empty the queue except for the current song.",
+        "- **#PREFIXqueue** Display the current queue and now playing.",
+        "- **#PREFIXloopqueue** Enable or disable queue looping.",
+        "- **#PREFIXvolume** Get or set the volume. `OPTIONAL[volume]`",
+        "- **#PREFIXshufflequeue** Shuffle the queue except for the now playing.",
+        "- **#PREFIXswap** Swap to songs in the queue. `positions`",
+        "- **#PREFIXremove** Remove a song for the queue. `position`",
+        "- **#PREFIXmove** Move a song to different position in the queue. `positions`"
+      ]
+    },
+    {
+      "title": "Fun",
+      "content": [
+        "- **#PREFIXemojify** Convert letters and numbers to emojis. `text`",
+        "- **#PREFIXnonsense** Spit out less than 200 random characters. `length`",
+        "- **#PREFIXcopypasta** Pastify some text. `text`",
+        "- **#PREFIXmeme** Get a dank meme.",
+        "- **#PREFIXcat** Get a cute cat picture.",
+        "- **#PREFIXcatfact** Get a random cat fact.",
+        "- **#PREFIXjoke** Get a random Dad Joke.",
+        "- **#PREFIXurban** Search the *Urban Dictionary*.",
+        "- **#PREFIXreddit** Get a hot post for a specified subreddit. `subreddit`",
+        "- **#PREFIXgenmeme** Generate a meme. `\"format\" OPTIONAL[\"toptext\" \"bottomtext\"]`"
+      ]
+    },
+    {
+      "title": "Money",
+      "content": [
+        "- **#PREFIXslots** Play the slot machine. If no bet is given, it's free. `OPTIONAL[bet]`",
+        "- **#PREFIXgive** Give someone money. `mention amount`",
+        "- **#PREFIXwork** Work a random job for some quick cash. __Timer: Every 30 minutes.__",
+        "- **#PREFIXsteal** Steal from someone. `mention amount` __Timer: Every 45 minutes.__",
+        "- **#PREFIXbalance** See your or someone else's balance. `OPTIONAL[name]`",
+        "- **#PREFIXdailies** Receive some daily cash. __Timer: Daily__"
+      ]
+    },
+    {
+      "title": "Games",
+      "content": [
+        "- **#PREFIXtrivia** Play a trivia guessing game.",
+        "- **#PREFIXrps** Play rock, paper, scissors.",
+        "- **#PREFIXcoinflip** Flip a coin.",
+        "- **#PREFIXdiceroll** Roll a six sided die.",
+        "- **#PREFIXdrawcard** Draw a random playing card."
+      ]
+    },
+    {
+      "title": "Filters",
+      "content": [
+        "- **#PREFIXaddfilter** Add a chat filter for a term. `term`",
+        "- **#PREFIXremovefilter** Remove a chat filter for a term. `term`",
+        "- **#PREFIXshowfilters** Display all the servers current filters."
+      ]
+    }
+  ]
+}
