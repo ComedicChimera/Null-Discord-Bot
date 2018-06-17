@@ -119,3 +119,13 @@ async def cat_fact(message):
     except Exception as e:
         log(message.server.id, str(e))
         await client.send_message(message.channel, 'No cat fact for you.')
+
+
+@command('motivate')
+async def motivate(message):
+    try:
+        quote = apis.get_inspire_quote()
+        await client.send_file(message.channel, quote, filename='quote.jpg')
+    except Exception as e:
+        log(message.server.id, str(e))
+        await client.send_message(message.channel, 'The bot was too depressed to inspire you.')

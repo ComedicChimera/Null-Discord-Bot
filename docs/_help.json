@@ -50,7 +50,8 @@
         "- **#PREFIXjoke** Get a random Dad Joke.",
         "- **#PREFIXurban** Search the *Urban Dictionary*.",
         "- **#PREFIXreddit** Get a hot post for a specified subreddit. `subreddit`",
-        "- **#PREFIXgenmeme** Generate a meme. `\"format\" OPTIONAL[\"toptext\" \"bottomtext\"]`"
+        "- **#PREFIXgenmeme** Generate a meme. `\"format\" OPTIONAL[\"toptext\" \"bottomtext\"]`",
+        "- **#PREFIXmotivate** Generate a motivation quote."
       ]
     },
     {

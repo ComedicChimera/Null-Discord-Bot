@@ -56,6 +56,8 @@ async def show_filters(message, args):
 
 
 def match_filters(message):
+    if message.server.id not in filters:
+        return False
     for item in filters[message.server.id]:
         if re.search(re.compile('\s*'.join(list(re.escape(item))), re.MULTILINE | re.IGNORECASE), message.content):
             return True

@@ -68,3 +68,10 @@ def get_cat_fact():
     resp = requests.get('https://catfact.ninja/fact')
     resp.raise_for_status()
     return resp.json()['fact']
+
+
+def get_inspire_quote():
+    resp = requests.get('http://inspirobot.me/api?generate=true')
+    resp.raise_for_status()
+    img = requests.get(str(resp.content)[2:-1], stream=True)
+    return img.raw

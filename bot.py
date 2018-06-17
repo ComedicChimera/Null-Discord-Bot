@@ -5,10 +5,22 @@ import filters
 from discord import Embed
 from logger import log
 
+# for the memes
+from random import choice
+
 
 @util.client.event
 async def on_message(message):
     if message.author.bot:
+        # check to make sure it didn't send message
+        if message.author == util.client.user:
+            return
+
+        # brandon clauses
+        if message.content.startswith('What do you call a'):
+            await insult(message)
+        elif message.content.startswith('How do you'):
+            await insult(message)
         return
 
     try:
@@ -16,6 +28,20 @@ async def on_message(message):
     except Exception as e:
         log(message.server.id, str(e))
         await util.client.send_message(message.channel, embed=Embed(color=util.error_color, description='An unknown error occurred.'))
+
+
+async def insult(message):
+    messages = [
+        'That joke wasn\'t funny and it never will be.',
+        'You are not funny.',
+        'Please be quiet for all of our sakes.',
+        'You make me want to die.',
+        'You don\'t need to tell jokes; you are one.',
+        'Inferior...',
+        ':joy: :gun:',
+        '```Roses are red,\nViolets are blue,\nThat bot is garbage,\nand Brandon is too.```'
+    ]
+    await util.client.send_message(message.channel, choice(messages))
 
 
 @util.client.event
@@ -32,7 +58,6 @@ async def on_server_join(server):
 
 @util.client.event
 async def on_member_join(member):
-    print(util.servers[member.server].__dict__)
     if member.id in util.servers[member.server].hack_bans:
         await util.client.kick(member)
     else:
